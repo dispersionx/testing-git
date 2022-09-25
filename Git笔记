@@ -27,3 +27,10 @@ hard表示硬重置（覆盖所有变更）
 12.	git branch -a列举所有远程分支
 13.	git checkout <branch>切换分支指令
 14.	git merge <branch> 合并分支
+
+Github：类似于实现了git功能的网盘
+Add repository之后
+1.	链接到远程仓库git remote add origin https://github.com/dispersionx/testing-git.git
+2.	取消远程链接git remote remove origin
+3.	git branch -M main把当前master分支改名为main
+4.	git push -u origin main将本地的master分支推送到远程的origin的main分支
