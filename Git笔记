@@ -1,0 +1,29 @@
+Git-分布式控制系统
+命令行语句
+1.	pwd	-print working directorty显示当前工作目录
+2.	ls  	-list files显示指定工作目录下的内容
+3.	cd	-change directory切换目录
+cd .. 两个点进入上一级
+4.	clear	-清除屏幕
+
+git命令
+1.	git version输出git版本号
+2.	git config --global user.name “dispersion”配置用户名
+3.	git config --global user.email 1780721434@qq.com配置邮箱
+4.	git init在当前目录初始化git并创建一个文件夹，会保存每一个版本记录和变化
+使用Git前，需要先建立一个仓库(repository)。您可以使用一个已经存在的目录作为Git仓库或创建一个空目录。
+使用您当前目录作为Git仓库，我们只需使它初始化。
+5.	git add test.txt将文件添加入版本控制系统之中
+6.	git add . 将当前目录的全部文件添加到版本控制系统之中
+在添加进去之后git只是将文件暂时保存！
+7.	git commit 把暂时保存的变更提交固定成一个版本
+此时会打开一个叫vim的终端编辑器，需要写提交说明
+打开时候默认不能写东西 摁a或者i进入编辑模式 摁esc退出编辑模式 输入英文输入法下的冒号(:wq)代表保存并退出
+8.	git log查看提交信息
+9.	git commit -m “first upload”提交的简化版操作，可以跳过vim编辑
+10.	git reset --hard d92a1d45fee6dd953f6f2e7a7824a4bb7cd1e510回退到某一次提交时候的状态
+hard表示硬重置（覆盖所有变更）
+11.	git branch <branch>创建分支 在提交完一次更改之后，可使用这个命令添加一个分支
+12.	git branch -a列举所有远程分支
+13.	git checkout <branch>切换分支指令
+14.	git merge <branch> 合并分支
